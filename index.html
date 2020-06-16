@@ -18,7 +18,10 @@
 	<!-- CSS -->
 	<link id="data-uikit-theme" rel="stylesheet" type="text/css" href= "UIkit/css/uikit.css"> 
 	<link rel="stylesheet" type="text/css" href= "UIkit/css/components/slidenav.css"> 
+	<link rel="stylesheet" type="text/css" href= "UIkit/css/components/dotnav.css"> 
 	<link rel="stylesheet" type="text/css" href= "UIkit/css/components/slider.css"> 
+	<link rel="stylesheet" type="text/css" href= "UIkit/css/components/slideshow.css"> 
+	<link rel="stylesheet" type="text/css" href= "UIkit/css/components/slideshow-fx.css"> 
 	
 	<!--HIPER style-->
 	<link rel="stylesheet" type="text/css" href= "css/hiperstyle_homepage.css"> 
@@ -29,6 +32,10 @@
 	<script src="UIkit/js/components/parallax.min.js"></script>    
 	<script src="UIkit/js/components/slider.min.js"></script>  	
 	<script src="UIkit/js/components/slidenav.min.js"></script>  		
+	<script src="UIkit/js/components/dotnav.min.js"></script>  
+	<script src="UIkit/js/components/slideshow.min.js"></script>  
+	<script src="UIkit/js/components/slideshow-fx.min.js"></script>  
+
 	<script src="functions.js"></script>
 	<script>
 		window.onload=load_news('se',3);
@@ -156,7 +163,7 @@
 			</div>
 			<div align="right"class="uk-width-large-2-4 uk-hidden-medium uk-hidden-small uk-push-right">
 				<p align="right"style=" color:#ffffff;font-size:50px;line-height:60px;margin-top:50px; padding:20px; width:75%">Set your goals straight!</p> 
-				<a href="http://hiper-app.com"><p class="buttonhover" align="center" style="border:1px solid white; color:#ffffff;font-size:20px;line-height:24px;margin-top:340px; padding:20px; width:200px">Starta nu!</p> </a>		
+<!--				<a href="http://hiper-app.com"><p class="buttonhover" align="center" style="border:1px solid white; color:#ffffff;font-size:20px;line-height:24px;margin-top:340px; padding:20px; width:200px">Starta nu!</p> </a>		-->
 				<a href="index.html#GettingStarted" data-uk-smooth-scroll><p class="buttonhover" align="center" style="border:1px solid white; color:#ffffff;font-size:20px;line-height:24px;margin-top:30px; padding:20px; width:200px">Hur fungerar det?</p> </a>		
 			</div>
 			<div align="right"class="uk-hidden-large uk-width-medium-1-2 uk-hidden-small uk-push-right">
@@ -173,6 +180,25 @@
 		</div>					
 	</div>
 
+	<!--What's HIPER?-- >
+	<div style="position:relative; 				
+				background-color: #ffffff;
+				width:100%;
+				
+				z-index: 100;
+				border-top: 1px solid grey;">	
+				<div class="uk-slidenav-position" data-uk-slideshow>
+					<ul class="uk-slideshow" style="top:0px;" data-uk-slideshow="{autoplay:true, autoplayInterval:4000, animation: 'swipe'}">
+				<!--		<li><img src="img/nyheter.jpg"alt=""></li>	-- >
+					
+						<li><img src="img/analysera.jpg" alt="Analysera trender i målsättningen med HIPER"></li>
+						<li><img src="img/prestera.jpg" alt="Prestera bättre än kollegor och chefer"></li>
+						<li><img src="img/kommentera.jpg" alt="Kommentera och stötta varandras målsättning med HIPER"></li>
+						<li><img src="img/utmana.jpg"alt="Utmana och bli utmanad i spännande mål med HIPER"></li>
+					</ul>
+				</div>
+	</div>-->
+	
 	<!--What's HIPER?-->
 	<div style="position:relative; 				
 				background-color: #ffffff;
@@ -365,7 +391,6 @@
 				style="position: relative;
 				background-color: #ffffff;
 				z-index: 100;
-<!--				min-height:650px;-->
 				width:100%;
 				border-top: 1px solid grey">
 				
@@ -473,7 +498,7 @@
 				background-color: #343434;
 				z-index: 100;
 				width: 100%;
-				min-height:410px;
+				min-height:440px;
 				border-top: 1px solid grey">
 		
 		<div align="center" style="position:relative; margin-top:20px ;width:100%;">
@@ -518,11 +543,12 @@
 			</div>
 			<hr style="border:1px grey solid; width:80%"></hr>
 			<div class="uk-grid" style="width:80%;">
-				<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2" align="center">   
-					<div style="float:left" class="fb-like" data-href="https://www.facebook.com/hiperapp" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+				<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2" align="left">   
+					<div class="fb-like" data-href="https://www.facebook.com/hiperapp" data-width="80" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+					<div style="padding-top:10px"><script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script><script type="IN/FollowCompany" data-id="10441173" data-counter="right"></script></div>
 				</div>
-				<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2" align="center">	
-					<a href="index.html"><img style="float:right; height:30px; width:auto; margin-right:10px;margin-left:20px;" src="img/hiper_logo.png"></img></a>
+				<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-2" align="right">	
+					<a href="index.html"><img style="float:right; height:30px; width:auto; margin-right:10px; margin-left:20px;" src="img/hiper_logo.png"></img></a>
 					<p style="float:right;color:white;font-size:11px">&copy; 2015</p>
 				</div>
 			</div>

@@ -1,7 +1,6 @@
 
 <?php
 
-
 //Server variables
 $servername = "localhost";
 $username = "thrsbcfn_admin";
